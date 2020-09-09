@@ -4,8 +4,9 @@ trigger:
 variables:
   buildConfiguration: 'Release'
   releaseBranchName: 'release'   # bt promote changes to dev stage  ( per doc ) 
+  
 # Promise to test
-  schedules:
+schedules:
   - cron: '0 13 * * *'
     displayName: Deploy every day 1pm
     branches:
